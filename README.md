@@ -75,7 +75,8 @@
   <h3>1.For training</h3>
   <p>+Step1: Dowload data you need to classification, the struct of folder contain data to classification like data preparation part</p>
   <p>+Step2: Install virtual environment, package</p>
-  <pre>conda create --name yolo python=3.10.12
+  <pre>
+  conda create --name yolo python=3.10.12
   git clone https://github.com/LuongTuanAnh163002/Yolov2s.git
   cd Yolov2s
   conda activate yolo
@@ -91,9 +92,9 @@
   #for file
   python detect.py --source file_name.jpg --weights ../runs/train/../weights/__.pth --device [0, 1, 2,..]
   #for folder
-  python detect.py --source path_folder --weights ../runs/train/../weights/__.pth --device [0, 1, 2,..]</pre>
+  python detect.py --source path_folder --weights ../runs/train/../weights/__.pth --device [0, 1, 2,..]
   #for video
   python detect.py --source video.mp4 --weight ../runs/train/../weights/__.pth --conf_thres 0.15 --device [0, 1, 2,..]
-  
+  </pre>
   <h3>3.Launch tensorboard</h3>
   <pre>tensorboard --logdir ../runs/train/name_project --bind_all --port=2002</pre>
