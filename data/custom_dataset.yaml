@@ -1,0 +1,9 @@
+train: # replace based on your path dataset's train 
+val: # replace based on your path dataset's val
+voc_path_txt: None #you do not need care about it
+# Classes 
+nc:  # replace based on your dataset's number of classes 
+
+# Class names 
+# replace all class names with your own classes' names 
+names: 
