@@ -9,7 +9,7 @@ url="https://drive.google.com/uc?export=download&id=$file_id"
 filename='fruit_dataset.zip'
 
 echo 'Downloading' $url$filename ' ...'
-curl -L $url$filename -o $filename
+gdown $file_id
 
 echo 'Unzipping' $filename '...'
 unzip -q $filename -d $d
