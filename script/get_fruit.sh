@@ -8,7 +8,6 @@ file_id='1btZfd9hFpY7J_UGDMHkUtia-2VggcLRP' # ID của file trên Google Drive
 url="https://drive.google.com/uc?export=download&id=$file_id"
 filename='fruit_dataset.zip'
 
-echo 'Downloading' $url$filename ' ...'
 gdown $file_id
 
 echo 'Unzipping' $filename '...'
