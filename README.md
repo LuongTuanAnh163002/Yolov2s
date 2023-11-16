@@ -90,9 +90,9 @@
   <h3>2.For detect</h3>
   <pre>
   #for file
-  python detect.py --source file_name.jpg --weights ../runs/train/../weights/__.pth --device [0, 1, 2,..]
+  python detect.py --source file_name.jpg --weight ../runs/train/../weights/__.pth --conf_thres 0.15 --device [0, 1, 2,..]
   #for folder
-  python detect.py --source path_folder --weights ../runs/train/../weights/__.pth --device [0, 1, 2,..]
+  python detect.py --source path_folder --weight ../runs/train/../weights/__.pth --conf_thres 0.15 --device [0, 1, 2,..]
   #for video
   python detect.py --source video.mp4 --weight ../runs/train/../weights/__.pth --conf_thres 0.15 --device [0, 1, 2,..]
   </pre>
