@@ -4,9 +4,18 @@
 
 # Download/unzip dataset
 d='./' # unzip directory
-url=https://drive.google.com/file/d/1btZfd9hFpY7J_UGDMHkUtia-2VggcLRP/view?usp=sharing/
-f='fruit_dataset.zip' # or 'coco2017labels.zip', 68 MB
-echo 'Downloading' $url$f ' ...'
-curl -L $url$f -o $f && unzip -q $f -d $d && rm $f & # download, unzip, remove in background
-wait # finish background tasks
+file_id='1btZfd9hFpY7J_UGDMHkUtia-2VggcLRP' # ID của file trên Google Drive
+url="https://drive.google.com/uc?export=download&id=$file_id"
+filename='fruit_dataset.zip'
+
+echo 'Downloading' $url$filename ' ...'
+curl -L $url$filename -o $filename
+
+echo 'Unzipping' $filename '...'
+unzip -q $filename -d $d
+
+echo 'Removing' $filename '...'
+rm $filename
+
+echo 'Download complete!'
  
