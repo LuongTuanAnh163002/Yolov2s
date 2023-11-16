@@ -83,13 +83,13 @@
   </pre>
   <p>+Step2: Dowload dataset</p>
   <pre>
-  #for ubuntu/linux
-  bash ./script/get_fruit.sh
+#for ubuntu/linux
+bash ./script/get_fruit.sh
   
-  #for window
-  gdown 1btZfd9hFpY7J_UGDMHkUtia-2VggcLRP
-  tar -xf fruit_dataset.zip
-  del fruit_dataset.zip
+#for window
+gdown 1btZfd9hFpY7J_UGDMHkUtia-2VggcLRP
+tar -xf fruit_dataset.zip
+del fruit_dataset.zip
   </pre>
   <p>+Step3: Go to "data" folder then create another file .yaml like custom_dataset.yaml</p>
   <p>+Step4: Run the command below to training for pretrain</p>
