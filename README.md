@@ -85,6 +85,7 @@
   <pre>
   #for ubuntu/linux
   bash ./script/get_fruit.sh
+  
   #for window
   gdown 1btZfd9hFpY7J_UGDMHkUtia-2VggcLRP
   tar -xf fruit_dataset.zip
