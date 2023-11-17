@@ -1,10 +1,10 @@
 #!/bin/bash
-# Soccer player dataset http://cocodataset.org
+# Fruit dataset http://cocodataset.org
 # Download command: bash ./scripts/get_fruit.sh
 
 # Download/unzip dataset
 d='./' # unzip directory
-file_id='1btZfd9hFpY7J_UGDMHkUtia-2VggcLRP' # ID của file trên Google Drive
+file_id='1btZfd9hFpY7J_UGDMHkUtia-2VggcLRP' # ID file
 url="https://drive.google.com/uc?export=download&id=$file_id"
 filename='fruit_dataset.zip'
 
